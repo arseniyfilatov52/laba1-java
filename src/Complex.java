@@ -39,7 +39,6 @@ public class Complex {
         return new Complex(r, i);
     }
 
-    @Override
     public String toString() {
         if (imag >= 0) {
             return real + " + " + imag + "i";
