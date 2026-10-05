@@ -5,6 +5,9 @@ public class ComplexMatrix {
     private int cols;
 
     public ComplexMatrix(int rows, int cols) {
+        if (rows <= 0 || cols <= 0) {
+            throw new RuntimeException("Размеры матрицы должны быть больше нуля");
+        }
         this.rows = rows;
         this.cols = cols;
         this.matrix = new Complex[rows][cols];
